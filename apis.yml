@@ -1,7 +1,24 @@
 aid: mcmakler
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mcmakler.png
 name: mcmakler
-description: mcmakler is a company surfaced as a portfolio company of balderton-capital and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: McMakler is a German hybrid residential real-estate brokerage (proptech) headquartered
+  in Berlin, combining local human agents with in-house technology to list, market, and sell homes
+  across Germany, Austria, and France. It was surfaced as a portfolio company of balderton-capital and
+  added to the API Evangelist network as a stub for enrichment. An enrichment pass on 2026-07-20 probed
+  the public surface and found no public developer API, developer portal, documentation, or well-known
+  discovery catalog; an internal backend host (api.mcmakler.de) exists but returns 403 and is not a
+  published API. Domain transport/email security was probed and recorded.
 url: https://raw.githubusercontent.com/api-evangelist/mcmakler/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Real Estate
+- Proptech
+- Germany
+- Brokerage
+- Housing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mcmakler-domain-security.yml
 - type: Website
   url: https://www.mcmakler.de/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
